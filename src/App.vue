@@ -22,7 +22,6 @@ import {
 } from 'naive-ui'
 
 import HelloWorld from './components/HelloWorld.vue'
-import Naive_test from "./components/naive_test.vue";
 import { ref } from "vue";
 import ThemeSwitch from "./components/theme_switch.vue";
 import HtmlHeader from "./components/html-header.vue";

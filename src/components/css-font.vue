@@ -49,12 +49,12 @@ const code = `
 
         <n-layout-content content-style="padding: 0px;" style="background-color: rgba(96,99,131,0.15);color: #37a69a">
 
-          <span id="a">Lorem ipsum dolor sit amet</span>
-          <span id="b">Lorem ipsum dolor sit amet</span>
-          <span id="c">Lorem ipsum dolor sit amet</span>
-          <span id="d">Lorem ipsum dolor sit amet</span>
-          <span id="e">Lorem ipsum dolor sit amet</span>
-          <span id="f">Lorem ipsum dolor sit amet</span>
+          <span id="a">Lorem ipsum dolor sit amet</span><br>
+          <span id="b">Lorem ipsum dolor sit amet</span><br>
+          <span id="c">Lorem ipsum dolor sit amet</span><br>
+          <span id="d">Lorem ipsum dolor sit amet</span><br>
+          <span id="e">Lorem ipsum dolor sit amet</span><br>
+          <span id="f">Lorem ipsum dolor sit amet</span><br>
 
         </n-layout-content>
 

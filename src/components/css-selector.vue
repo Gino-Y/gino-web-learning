@@ -17,19 +17,17 @@ import {
 let showModal= ref(false)
 const code = `
 <template>
+  <p>Lorem</p>
+  <p class="paragraph">Lorem</p>
+  <p id="paral">Lorem</p>
   <p class="paragraph" id="paral">Lorem</p>
 </template>
 
 <style scoped>
-p{
-color: red;
-}
-.paragraph{
-color: red;
-}
-#paral{
-color: red;
-}
+  p{color: red;}
+  .paragraph{color: green;}
+  #paral{color: blue;}
+  #paral2{color: #c800ff;}
 </style>
 `
 </script>
@@ -41,13 +39,16 @@ color: red;
       <n-layout>
         <n-layout-header>
           <n-space>
-            <n-tag :bordered="false" type="error"> Selector 选择器 </n-tag>
+            <n-tag :bordered="false" type="error"> Selector 选择器与层级覆盖 </n-tag>
           </n-space>
         </n-layout-header>
 
         <n-layout-content content-style="padding: 0px;" style="background-color: rgba(96,99,131,0.15);color: #37a69a">
 
-          <p class="paragraph" id="paral">Lorem</p>
+          <p>Lorem</p>
+          <p class="paragraph">Lorem</p>
+          <p id="paral">Lorem</p>
+          <p class="paragraph" id="paral2">Lorem</p>
 
         </n-layout-content>
 
@@ -83,9 +84,10 @@ color: red;
       <n-alert title="样式选择器" type="error" :show-icon="false" style="user-select:none;">
 
         这个例子中<br>
-        p 标签选择<br>
+        p 标签选择器<br>
         .paragraph 类选择器<br>
-        #paral ID选择器
+        #paral ID选择器<br>
+        标签 ➔ 类 ➔ ID
 
       </n-alert>
       <div style="overflow: auto">
@@ -97,12 +99,15 @@ color: red;
 
 <style scoped>
 p{
-color: red;
+  color: red;
 }
 .paragraph{
-color: red;
+  color: green;
 }
 #paral{
-color: red;
+  color: blue;
+}
+#paral2{
+  color: #c800ff;
 }
 </style>

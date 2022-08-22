@@ -1,13 +1,13 @@
 <template>
   <n-switch v-model:value="active" />
-  <n-switch :rail-style="railStyle">
-    <template #checked>
-      傍晚六点下班
-    </template>
-    <template #unchecked>
-      午夜零点下班
-    </template>
-  </n-switch>
+<!--  <n-switch :rail-style="railStyle">-->
+<!--    <template #checked>-->
+<!--      傍晚六点下班-->
+<!--    </template>-->
+<!--    <template #unchecked>-->
+<!--      午夜零点下班-->
+<!--    </template>-->
+<!--  </n-switch>-->
 </template>
 
 <script>

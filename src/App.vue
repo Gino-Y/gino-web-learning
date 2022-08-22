@@ -35,6 +35,7 @@ import HtmlTable from "./components/html-table.vue";
 import HtmlList from "./components/html-list.vue";
 import HtmlBlock from "./components/html-block.vue";
 import HtmlInline from "./components/html-inline.vue";
+import CssSelector from "./components/css-selector.vue";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -48,7 +49,6 @@ const flag = ref(false)
 </script>
 
 <template>
-<!--  <n-config-provider :theme="theme" :hljs="hljs">-->
   <n-config-provider :theme="flag?null:darkTheme" :hljs="hljs">
     <n-space vertical size="large" >
 <!--      <n-layout >-->
@@ -58,7 +58,7 @@ const flag = ref(false)
           <n-card embedded>
             <n-space justify="end">
 
-<!--              <ThemeSwitch/>   &lt;!&ndash; &#45;&#45; &ndash;&gt;-->
+              <ThemeSwitch />   <!-- -- -->
 <!--              <n-switch v-model:value="active" />-->
               <n-switch v-model:value="flag">
                 <template #checked >
@@ -133,20 +133,14 @@ const flag = ref(false)
               <n-grid-item> <html-list/> </n-grid-item>
               <n-grid-item> <html-block/> </n-grid-item>
               <n-grid-item> <html-inline/> </n-grid-item>
-              <n-grid-item>
-                <div class="light-green">
-                  5
-                </div>
-              </n-grid-item>
+              <n-grid-item> <css-selector/> </n-grid-item>
               <n-grid-item>
                 <div class="green">
                   6
                 </div>
               </n-grid-item>
               <n-grid-item>
-                <div class="light-green">
-                  1
-                </div>
+                <css-selector/>
               </n-grid-item>
               <n-grid-item>
                 <div class="green">

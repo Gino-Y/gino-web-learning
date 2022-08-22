@@ -77,7 +77,8 @@ const code = `
         <n-alert title="内联元素" type="error" :show-icon="false" style="user-select:none;">
 
           不会以新行开始<br>
-          span 内联容器
+          span 内联容器<br>
+          b 粗体文本
 
 
         </n-alert>

@@ -36,6 +36,7 @@ import HtmlList from "./components/html-list.vue";
 import HtmlBlock from "./components/html-block.vue";
 import HtmlInline from "./components/html-inline.vue";
 import CssSelector from "./components/css-selector.vue";
+import CssFont from "./components/css-font.vue";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -134,13 +135,16 @@ const flag = ref(false)
               <n-grid-item> <html-block/> </n-grid-item>
               <n-grid-item> <html-inline/> </n-grid-item>
               <n-grid-item> <css-selector/> </n-grid-item>
+              <n-grid-item> <css-font/> </n-grid-item>
               <n-grid-item>
                 <div class="green">
                   6
                 </div>
               </n-grid-item>
               <n-grid-item>
-                <css-selector/>
+                <div class="green">
+                  1
+                </div>
               </n-grid-item>
               <n-grid-item>
                 <div class="green">

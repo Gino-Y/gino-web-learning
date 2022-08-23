@@ -17,23 +17,25 @@ import {
 let showModal= ref(false)
 const code = `
 <template>
-  <span id="a">Lorem ipsum dolor sit amet</span>
-  <span id="b">Lorem ipsum dolor sit amet</span>
-  <span id="c">Lorem ipsum dolor sit amet</span>
-  <span id="d">Lorem ipsum dolor sit amet</span>
-  <span id="e">Lorem ipsum dolor sit amet</span>
-  <span id="f">Lorem ipsum dolor sit amet</span>
+  <span id="a">Lorem ipsum dolor sit amet</span><br>
+  <span id="b">Lorem ipsum dolor sit amet</span><br>
+  <span id="c">Lorem ipsum dolor sit amet</span><br>
+  <span id="d">Lorem ipsum dolor sit amet</span><br>
+  <span id="e">Lorem ipsum dolor sit amet</span><br>
+  <span id="f">Lorem ipsum dolor sit amet</span><br>
   <span id="g">Lorem ipsum dolor sit amet</span><br>
+  <span id="h">Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet</span><br>
 </template>
 
 <style scoped>
-#a{ font-family: Arial, Helvetica, sans-serif }
-#b{ font-family: 'Gill Sans', sans-serif }
-#c{ font-family: 'Times New Roman', serif }
-#d{ font-family: Didot, serif }
-#e{ font-family: 'Andale Mono', monospace }
-#f{ font-family: 'IBM Plex Mono', monospace }
-#g{ font: normal 16px Arial, Helvetica, sans-serif }
+#a{ font-family: 'Times New Roman', serif }
+#b{ font-weight: 800 }
+#c{ font-style: italic }
+#d{ text-decoration: underline }
+#e{ text-transform: uppercase }
+#f{ letter-spacing: 0.5em }
+#g{ word-spacing: 2em }
+#h{ line-height: 3em }
 </style>
 `
 </script>
@@ -58,6 +60,7 @@ const code = `
           <span id="e">Lorem ipsum dolor sit amet</span><br>
           <span id="f">Lorem ipsum dolor sit amet</span><br>
           <span id="g">Lorem ipsum dolor sit amet</span><br>
+          <span id="h">Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet</span><br>
 
         </n-layout-content>
 
@@ -90,11 +93,16 @@ const code = `
                 bottom: 100px;
               "
     >
-      <n-alert title="字体设置" type="error" :show-icon="false" style="user-select:none;">
+      <n-alert title="字体其他设置" type="error" :show-icon="false" style="user-select:none;">
 
-        sans-serif 无衬线<br>
-        serif 有衬线<br>
-        可以属性连写
+        font-family: 字体<br>
+        font-weight: 字粗<br>
+        font-style: 字体样式<br>
+        text-decoration: 文本修饰线<br>
+        text-transform: 大小写转换<br>
+        letter-spacing: 字间距<br>
+        word-spacing: 词间距<br>
+        line-height: 行间距<br>
 
       </n-alert>
       <div style="overflow: auto">
@@ -105,11 +113,12 @@ const code = `
 </template>
 
 <style scoped>
-#a{ font-family: Arial, Helvetica, sans-serif }
-#b{ font-family: 'Gill Sans', sans-serif }
-#c{ font-family: 'Times New Roman', serif }
-#d{ font-family: Didot, serif }
-#e{ font-family: 'Andale Mono', monospace }
-#f{ font-family: 'IBM Plex Mono', monospace }
-#g{ font: normal 16px Arial, Helvetica, sans-serif }
+#a{ font-family: 'Times New Roman', serif }
+#b{ font-weight: 800 }
+#c{ font-style: italic }
+#d{ text-decoration: underline }
+#e{ text-transform: uppercase }
+#f{ letter-spacing: 0.5em }
+#g{ word-spacing: 2em }
+#h{ line-height: 3em }
 </style>

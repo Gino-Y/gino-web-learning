@@ -37,6 +37,10 @@ import HtmlBlock from "./components/html-block.vue";
 import HtmlInline from "./components/html-inline.vue";
 import CssSelector from "./components/css-selector.vue";
 import CssFont from "./components/css-font.vue";
+import CssFontOther from "./components/css-font-other.vue";
+import CssMargin from "./components/css-margin.vue";
+import CssBorder from "./components/css-border.vue";
+import CssMouse from "./components/css-mouse.vue";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -136,6 +140,10 @@ const flag = ref(false)
               <n-grid-item> <html-inline/> </n-grid-item>
               <n-grid-item> <css-selector/> </n-grid-item>
               <n-grid-item> <css-font/> </n-grid-item>
+              <n-grid-item> <css-font-other/> </n-grid-item>
+              <n-grid-item> <css-margin/> </n-grid-item>
+              <n-grid-item> <css-border/> </n-grid-item>
+              <n-grid-item> <css-mouse/> </n-grid-item>
               <n-grid-item>
                 <div class="green">
                   6

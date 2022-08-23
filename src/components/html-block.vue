@@ -56,7 +56,7 @@ const code = `
             <n-space justify="end">
 
               <n-button strong secondary type="info" @click="showModal = true">
-                Code: html-table.vue
+                Code: html-block.vue
               </n-button>
 
             </n-space>

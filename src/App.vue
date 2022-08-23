@@ -41,6 +41,7 @@ import CssFontOther from "./components/css-font-other.vue";
 import CssMargin from "./components/css-margin.vue";
 import CssBorder from "./components/css-border.vue";
 import CssMouse from "./components/css-mouse.vue";
+import TipBlock from "./components/elements/tip-block.vue";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -129,8 +130,54 @@ const flag = ref(false)
 
             <n-scrollbar style="max-height: 780px">
             <n-grid :x-gap="4" :y-gap="8" cols="200:1 400:2 600:3 800:4 1000:5">
-<!--            <n-grid :x-gap="12" :y-gap="8" cols="3">-->
-              <n-grid-item> <html-header/> </n-grid-item>
+              <n-grid-item>
+
+<!--                <tip-block :tip_name="'Headline 标题标签'"-->
+<!--                           :file_name="'html-header'"-->
+<!--                           :code=readFile("./components/html-header.vue")-->
+<!--                >-->
+                <tip-block :tip_name="'Headline 标题标签'"
+                           :file_name="'html-header'"
+                >
+                  <html-header/>
+                  <template #description>
+                    h1 最大<br>
+                    h5 最小<br>
+                    br 换行
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Paragraph 段落标签'"
+                           :file_name="'html-header'"
+                >
+                  <html-paragraph/>
+                  <template #description>
+                    段落标签会自动换行<br>
+                    且行间距比较大<br>
+                    p 段落<br>
+                    hr 分割线<br>
+                    br 段落内换行
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Hyperlink 超链接标签'"
+                           :file_name="'html-hyperlink'"
+                >
+                  <html-hyperlink/>
+                  <template #description>
+                    a 超链接<br>
+                    href="" 设置地址<br>
+                    target="_blank" 新窗口打开
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
               <n-grid-item> <html-paragraph/> </n-grid-item>
               <n-grid-item> <html-hyperlink/> </n-grid-item>
               <n-grid-item> <html-image/> </n-grid-item>

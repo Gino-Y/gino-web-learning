@@ -28,20 +28,35 @@ import javascript from 'highlight.js/lib/languages/javascript'
 import HelloWorld from './components/HelloWorld.vue'
 import ThemeSwitch from "./components/theme_switch.vue";
 import HtmlHeader from "./components/html-header.vue";
+import HtmlHeaderCode from "./components/html-header.vue?raw";
 import HtmlParagraph from "./components/html-paragraph.vue";
+import HtmlParagraphCode from "./components/html-paragraph.vue?raw";
 import HtmlHyperlink from "./components/html-hyperlink.vue";
+import HtmlHyperlinkCode from "./components/html-hyperlink.vue?raw";
 import HtmlImage from "./components/html-image.vue";
+import HtmlImageCode from "./components/html-image.vue?raw";
 import HtmlTable from "./components/html-table.vue";
+import HtmlTableCode from "./components/html-table.vue?raw";
 import HtmlList from "./components/html-list.vue";
+import HtmlListCode from "./components/html-list.vue?raw";
 import HtmlBlock from "./components/html-block.vue";
+import HtmlBlockCode from "./components/html-block.vue?raw";
 import HtmlInline from "./components/html-inline.vue";
+import HtmlInlineCode from "./components/html-inline.vue?raw";
 import CssSelector from "./components/css-selector.vue";
+import CssSelectorCode from "./components/css-selector.vue?raw";
 import CssFont from "./components/css-font.vue";
+import CssFontCode from "./components/css-font.vue?raw";
 import CssFontOther from "./components/css-font-other.vue";
+import CssFontOtherCode from "./components/css-font-other.vue?raw";
 import CssMargin from "./components/css-margin.vue";
+import CssMarginCode from "./components/css-margin.vue?raw";
 import CssBorder from "./components/css-border.vue";
+import CssBorderCode from "./components/css-border.vue?raw";
 import CssMouse from "./components/css-mouse.vue";
+import CssMouseCode from "./components/css-mouse.vue?raw";
 import TipBlock from "./components/elements/tip-block.vue";
+import TipBlockCode from "./components/elements/tip-block.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -132,12 +147,9 @@ const flag = ref(false)
             <n-grid :x-gap="4" :y-gap="8" cols="200:1 400:2 600:3 800:4 1000:5">
               <n-grid-item>
 
-<!--                <tip-block :tip_name="'Headline 标题标签'"-->
-<!--                           :file_name="'html-header'"-->
-<!--                           :code=readFile("./components/html-header.vue")-->
-<!--                >-->
                 <tip-block :tip_name="'Headline 标题标签'"
                            :file_name="'html-header'"
+                           :code='HtmlHeaderCode'
                 >
                   <html-header/>
                   <template #description>
@@ -151,7 +163,8 @@ const flag = ref(false)
               <n-grid-item>
 
                 <tip-block :tip_name="'Paragraph 段落标签'"
-                           :file_name="'html-header'"
+                           :file_name="'html-paragraph'"
+                           :code='HtmlParagraphCode'
                 >
                   <html-paragraph/>
                   <template #description>
@@ -168,6 +181,7 @@ const flag = ref(false)
 
                 <tip-block :tip_name="'Hyperlink 超链接标签'"
                            :file_name="'html-hyperlink'"
+                           :code='HtmlHyperlinkCode'
                 >
                   <html-hyperlink/>
                   <template #description>
@@ -178,19 +192,180 @@ const flag = ref(false)
 
                 </tip-block>
               </n-grid-item>
-              <n-grid-item> <html-paragraph/> </n-grid-item>
-              <n-grid-item> <html-hyperlink/> </n-grid-item>
-              <n-grid-item> <html-image/> </n-grid-item>
-              <n-grid-item> <html-table/> </n-grid-item>
-              <n-grid-item> <html-list/> </n-grid-item>
-              <n-grid-item> <html-block/> </n-grid-item>
-              <n-grid-item> <html-inline/> </n-grid-item>
-              <n-grid-item> <css-selector/> </n-grid-item>
-              <n-grid-item> <css-font/> </n-grid-item>
-              <n-grid-item> <css-font-other/> </n-grid-item>
-              <n-grid-item> <css-margin/> </n-grid-item>
-              <n-grid-item> <css-border/> </n-grid-item>
-              <n-grid-item> <css-mouse/> </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Image 图片标签'"
+                           :file_name="'html-image'"
+                           :code='HtmlImageCode'
+                >
+                  <html-image/>
+                  <template #description>
+                    只有单标签<br>
+                    img 图片<br>
+                    src="" 设置地址<br>
+                    alt="展示的图片" 预备文本——图片失效时展示的文字<br>
+                    width="230" 宽度<br>
+                    height="150" 高度<br>
+                    高度通常不需要设置即可等比缩放
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Table 表格标签'"
+                           :file_name="'html-table'"
+                           :code='HtmlTableCode'
+                >
+                  <html-table/>
+                  <template #description>
+                    table 表格<br>
+                    border 边框<br>
+                    tr 行元素<br>
+                    td 列元素<br>
+                    th 表头<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'List 列表标签'"
+                           :file_name="'html-list'"
+                           :code='HtmlListCode'
+                >
+                  <html-list/>
+                  <template #description>
+                    ol 有序列表<br>
+                    ul 无序列表<br>
+                    li 列表元素<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Block 区块元素'"
+                           :file_name="'html-block'"
+                           :code='HtmlBlockCode'
+                >
+                  <html-block/>
+                  <template #description>
+                    通常会以新行开始<br>
+                    div 区块容器
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Inline 内联元素'"
+                           :file_name="'html-inline'"
+                           :code='HtmlInlineCode'
+                >
+                  <html-inline/>
+                  <template #description>
+                    不会以新行开始<br>
+                    span 内联容器<br>
+                    b 粗体文本
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Selector 选择器与层级覆盖'"
+                           :file_name="'css-selector'"
+                           :code='CssSelectorCode'
+                >
+                  <css-selector/>
+                  <template #description>
+                    这个样式例子中<br>
+                    p 标签选择器<br>
+                    .paragraph 类选择器<br>
+                    #paral ID选择器<br>
+                    标签P ➔ 类.paragraph ➔ ID#paral
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Font 字体'"
+                           :file_name="'css-font'"
+                           :code='CssFontCode'
+                >
+                  <css-font/>
+                  <template #description>
+                    sans-serif 无衬线<br>
+                    serif 有衬线<br>
+                    可以属性连写
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Font 字体'"
+                           :file_name="'css-font-other'"
+                           :code='CssFontOtherCode'
+                >
+                  <css-font-other/>
+                  <template #description>
+                    font-family: 字体<br>
+                    font-weight: 字粗<br>
+                    font-style: 字体样式<br>
+                    text-decoration: 文本修饰线<br>
+                    text-transform: 大小写转换<br>
+                    letter-spacing: 字间距<br>
+                    word-spacing: 词间距<br>
+                    line-height: 行间距<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Margin 外边距'"
+                           :file_name="'css-margin'"
+                           :code='CssMarginCode'
+                >
+                  <css-margin/>
+                  <template #description>
+                    可简写<br>
+                    padding 用法相同
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Border 边框'"
+                           :file_name="'css-border'"
+                           :code='CssBorderCode'
+                >
+                  <css-border/>
+                  <template #description>
+                    可简写<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Mouse 鼠标行为'"
+                           :file_name="'css-mouse'"
+                           :code='CssMouseCode'
+                >
+                  <css-mouse/>
+                  <template #description>
+                    hover 经过<br>
+                    active 点击<br>
+                    user-select:none; 屏蔽选择
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
               <n-grid-item>
                 <div class="green">
                   6

@@ -92,7 +92,8 @@ const {tip_name, file_name, code} = defineProps({
       </n-grid-item>
     </n-grid>
       <div style="overflow: auto">
-        <n-code :code="code" language="javascript" show-line-numbers />
+<!--        <span>Show Code:</span>-->
+        <n-code :code="code" language="javascript,html" show-line-numbers />
       </div>
     </n-card>
 

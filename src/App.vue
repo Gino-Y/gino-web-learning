@@ -57,6 +57,12 @@ import CssMouse from "./components/css-mouse.vue";
 import CssMouseCode from "./components/css-mouse.vue?raw";
 import TipBlock from "./components/elements/tip-block.vue";
 import TipBlockCode from "./components/elements/tip-block.vue?raw";
+import CssFloatBorder from "./components/css-float-border.vue";
+import CssFloatBorderCode from "./components/css-float-border.vue?raw";
+import CssChild from "./components/css-child.vue";
+import CssChildCode from "./components/css-child.vue?raw";
+import CssRelativeAbsolute from "./components/css-relative-absolute.vue";
+import CssRelativeAbsoluteCode from "./components/css-relative-absolute.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -367,39 +373,58 @@ const flag = ref(false)
                 </tip-block>
               </n-grid-item>
               <n-grid-item>
-                <div class="green">
-                  6
-                </div>
+
+                <tip-block :tip_name="'Float&Border 浮动与边框'"
+                           :file_name="'css-mouse'"
+                           :code='CssFloatBorderCode'
+                >
+                  <css-float-border/>
+                  <template #description>
+                    <b>float会使得默认纵向排列的方式更改为了横向排列，所以设置float后，一定要加清除浮动功能的标签</b>
+                    float 浮动<br>
+                    border 边框<br>
+                    box-sizing: border-box; 使用边框盒子作为宽度<br>
+                    clear:both 清除浮动
+                  </template>
+
+                </tip-block>
               </n-grid-item>
               <n-grid-item>
-                <div class="green">
-                  1
-                </div>
+
+                <tip-block :tip_name="'Child 子元素伪类'"
+                           :file_name="'css-child'"
+                           :code='CssChildCode'
+                >
+                  <css-child/>
+                  <template #description>
+                    :nth-child 子元素<br>
+                    odd 奇数<br>
+                    even 偶数<br>
+                    (3) 第三个元素<br>
+                    :first-child 第一个子元素<br>
+                    :last-child 最后一个子元素<br>
+                  </template>
+
+                </tip-block>
               </n-grid-item>
               <n-grid-item>
-                <div class="green">
-                  2
-                </div>
-              </n-grid-item>
-              <n-grid-item>
-                <div class="light-green">
-                  3
-                </div>
-              </n-grid-item>
-              <n-grid-item>
-                <div class="green">
-                  4
-                </div>
-              </n-grid-item>
-              <n-grid-item>
-                <div class="light-green">
-                  5
-                </div>
-              </n-grid-item>
-              <n-grid-item>
-                <div class="green">
-                  6
-                </div>
+
+                <tip-block :tip_name="'Relative&Absolute 相对与绝对位置'"
+                           :file_name="'css-relative-absolute'"
+                           :code='CssRelativeAbsoluteCode'
+                >
+                  <css-relative-absolute/>
+                  <template #description>
+                    父节点设置了相对位置关系<br>
+                    子节点就会基于父节点做绝对偏移<br>
+                    否则会以整个网页做关系偏移<br>
+                    position 位置<br>
+                    relative 相对<br>
+                    absolute 绝对<br>
+                    fixed 固定  当前窗口固定
+                  </template>
+
+                </tip-block>
               </n-grid-item>
               <n-grid-item>
                 <div class="light-green">

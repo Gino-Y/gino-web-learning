@@ -30,7 +30,7 @@ const {tip_name, file_name, code} = defineProps({
   },
 })
 </script>
-s
+
 <template>
   <n-card size="small" :bordered="false">
 
@@ -82,7 +82,7 @@ s
           </n-alert>
         </n-grid-item>
         <n-grid-item>
-      <n-alert title="Node" type="error" :show-icon="false" style="user-select:none;">
+      <n-alert title="Note" type="error" :show-icon="false" style="user-select:none;">
 
         <slot name="description"/>
 

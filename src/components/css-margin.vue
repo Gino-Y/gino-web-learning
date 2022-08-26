@@ -17,16 +17,8 @@
   margin-bottom: 25px;
   margin-left: 100px;
 }
-#a{
-  margin: 25px 20px 25px 100px;
-}
-#b{
-  margin: 25px 20px;
-}
-#c{
-  margin: 25px 20px 10px;
-}
-#d{
-  margin: 50px;
-}
+#a{margin: 25px 20px 25px 100px}
+#b{margin: 25px 20px}
+#c{margin: 25px 20px 10px}
+#d{margin: 50px}
 </style>

@@ -63,6 +63,20 @@ import CssChild from "./components/css-child.vue";
 import CssChildCode from "./components/css-child.vue?raw";
 import CssRelativeAbsolute from "./components/css-relative-absolute.vue";
 import CssRelativeAbsoluteCode from "./components/css-relative-absolute.vue?raw";
+import CssFlexDefine from "./components/css-flex-define.vue";
+import CssFlexDefineCode from "./components/css-flex-define.vue?raw";
+import CssFlexDirection from "./components/css-flex-direction.vue";
+import CssFlexDirectionCode from "./components/css-flex-direction.vue?raw";
+import CssFlexOverflow from "./components/css-flex-overflow.vue";
+import CssFlexOverflowCode from "./components/css-flex-overflow.vue?raw";
+import CssFlexFlow from "./components/css-flex-flow.vue";
+import CssFlexFlowCode from "./components/css-flex-flow.vue?raw";
+import CssFlexJustify from "./components/css-flex-justify.vue";
+import CssFlexJustifyCode from "./components/css-flex-justify.vue?raw";
+import CssFlexAlign from "./components/css-flex-align.vue";
+import CssFlexAlignCode from "./components/css-flex-align.vue?raw";
+import CssFlexCenter from "./components/css-flex-center.vue";
+import CssFlexCenterCode from "./components/css-flex-center.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -422,6 +436,104 @@ const flag = ref(false)
                     relative 相对<br>
                     absolute 绝对<br>
                     fixed 固定  当前窗口固定
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Define 弹性盒模型定义'"
+                           :file_name="'css-flex-define'"
+                           :code='CssFlexDefineCode'
+                >
+                  <css-flex-define/>
+                  <template #description>
+                    父组件设置flex，控制子元素<br>
+                    display: flex;<br>
+                    "border-width" 属性 如果单独使用则不起作用。要先使用 "border-style" 属性来设置边框。<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Direction 排列方向'"
+                           :file_name="'css-flex-direction'"
+                           :code='CssFlexDirectionCode'
+                >
+                  <css-flex-direction/>
+                  <template #description>
+                    flex-direction: 排列方式<br>
+                    row 横向<br>
+                    column 纵向<br>
+                    row-reverse 横向倒序<br>
+                    column-reverse 纵向倒序
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Overflow 溢出'"
+                           :file_name="'css-flex-overflow'"
+                           :code='CssFlexOverflowCode'
+                >
+                  <css-flex-overflow/>
+                  <template #description>
+                    flex-wrap: wrap 包裹折行<br>
+                    wrap-reverse 倒着折
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex flow 排列折行缩写'"
+                           :file_name="'css-flex-flow'"
+                           :code='CssFlexFlowCode'
+                >
+                  <css-flex-flow/>
+                  <template #description>
+                    flex-flow: column wrap-reverse 纵向倒序折行<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Justify 对齐'"
+                           :file_name="'css-flex-justify'"
+                           :code='CssFlexJustifyCode'
+                >
+                  <css-flex-justify/>
+                  <template #description>
+                    justify-content 对齐内容<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Align 交叉轴对齐'"
+                           :file_name="'css-flex-align'"
+                           :code='CssFlexAlignCode'
+                >
+                  <css-flex-align/>
+                  <template #description>
+                    justify-content 对齐内容<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'Flex Center 主轴交叉轴对齐'"
+                           :file_name="'css-flex-center'"
+                           :code='CssFlexCenterCode'
+                >
+                  <css-flex-center/>
+                  <template #description>
+<!--                    justify-content 对齐内容<br>-->
                   </template>
 
                 </tip-block>

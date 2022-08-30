@@ -77,6 +77,8 @@ import CssFlexAlign from "./components/css-flex-align.vue";
 import CssFlexAlignCode from "./components/css-flex-align.vue?raw";
 import CssFlexCenter from "./components/css-flex-center.vue";
 import CssFlexCenterCode from "./components/css-flex-center.vue?raw";
+import VueVfor from "./components/vue-vfor.vue";
+import VueVforCode from "./components/vue-vfor.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -534,6 +536,24 @@ const flag = ref(false)
                   <css-flex-center/>
                   <template #description>
 <!--                    justify-content 对齐内容<br>-->
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE v-for 迭代指令'"
+                           :file_name="'vue-vfor'"
+                           :code='VueVforCode'
+                >
+                  <vue-vfor/>
+                  <template #description>
+                    :key='index' 每次都要加不够麻烦的<br>
+                    item 条目<br>
+                    index 指针<br>
+                    key 键<br>
+                    value 值<br>
+                    注意对象关系是反的
                   </template>
 
                 </tip-block>

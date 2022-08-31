@@ -34,13 +34,14 @@ const {tip_name, file_name, code} = defineProps({
 <template>
   <n-card size="small" :bordered="false">
 
-    <n-space vertical size="large" >
+<!--    <n-space vertical size="large" class="height" >-->
+    <n-space vertical size="large">
       <n-layout>
         <n-layout-header>
             <n-tag :bordered="false" type="error" style="width: 100%"> {{tip_name}} </n-tag>
         </n-layout-header>
 
-        <n-layout-content content-style="padding: 20px;" style="background-color: rgba(96,99,131,0.15);color: #37a69a">
+        <n-layout-content content-style="padding:  20px;" style="background-color: rgba(96,99,131,0.15);color: #37a69a;">
             <slot/>
         </n-layout-content>
 
@@ -98,3 +99,12 @@ const {tip_name, file_name, code} = defineProps({
 
   </n-modal>
 </template>
+
+<style scoped>
+.height{
+  max-height: 200px;
+}
+.height:hover{
+  max-height: max-content;
+}
+</style>

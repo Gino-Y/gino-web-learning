@@ -89,6 +89,22 @@ import VueVbind from "./components/vue-vbind.vue";
 import VueVbindCode from "./components/vue-vbind.vue?raw";
 import VueVmodel from "./components/vue-vmodel.vue";
 import VueVmodelCode from "./components/vue-vmodel.vue?raw";
+import VueadvRef from "./components/vueadv-ref.vue";
+import VueadvRefCode from "./components/vueadv-ref.vue?raw";
+import VueadvTab1 from "./components/vueadv-tab1.vue";
+import VueadvTab1Code from "./components/vueadv-tab1.vue?raw";
+import VueadvTab2 from "./components/vueadv-tab2.vue";
+import VueadvTab2Code from "./components/vueadv-tab2.vue?raw";
+import VueadvAddtag from "./components/vueadv-addtag.vue";
+import VueadvAddtagCode from "./components/vueadv-addtag.vue?raw";
+import VueadvReactive from "./components/vueadv-reactive.vue";
+import VueadvReactiveCode from "./components/vueadv-reactive.vue?raw";
+import VueadvReftest from "./components/vueadv-reftest.vue";
+import VueadvReftestCode from "./components/vueadv-reftest.vue?raw";
+import VueadvComputed02 from "./components/vueadv-computed02.vue";
+import VueadvComputed02Code from "./components/vueadv-computed02.vue?raw";
+import VueadvComputed from "./components/vueadv-computed.vue";
+import VueadvComputedCode from "./components/vueadv-computed.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -651,9 +667,6 @@ const flag = ref(false)
                   <vue-vmodel/>
                   <template #description>
                     这玩应一般就用在input里<br>
-                    : 缩写<br>
-                    样式名 双层引号<br>
-                    函数括号不能省略<br>
                     复选框可以指定value值<br>
                     单选框记得加name且值相同<br>
                     下拉单指定value就使用value<br>
@@ -661,6 +674,110 @@ const flag = ref(false)
                     .lazy ——监听 change 事件而不是 input<br>
                     .number ——将输入的合法符串转为数字<br>
                     .trim ——移除输入内容两端空格<br>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE ref 响应式与函数式'"
+                           :file_name="'vueadv-ref'"
+                           :code='VueadvRefCode'
+                >
+                  <vueadv-ref/>
+                  <template #description>
+                    ref(100) 响应数据
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE setup 语法糖'"
+                           :file_name="'vueadv-tab1'"
+                           :code='VueadvTab1Code'
+                >
+                  <vueadv-tab1/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE setup 语法糖'"
+                           :file_name="'vueadv-tab2'"
+                           :code='VueadvTab2Code'
+                >
+                  <vueadv-tab2/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE setup 语法糖'"
+                           :file_name="'vueadv-addtag'"
+                           :code='VueadvAddtagCode'
+                >
+                  <vueadv-addtag/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE reactive函数'"
+                           :file_name="'vueadv-reactive'"
+                           :code='VueadvReactiveCode'
+                >
+                  <vueadv-reactive/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE ref DOM引用'"
+                           :file_name="'vueadv-reftest'"
+                           :code='VueadvReftestCode'
+                >
+                  <vueadv-reftest/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE computed 计算属性'"
+                           :file_name="'vueadv-computed02'"
+                           :code='VueadvComputed02Code'
+                >
+                  <vueadv-computed02/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE computed 计算属性'"
+                           :file_name="'vueadv-computed'"
+                           :code='VueadvComputedCode'
+                >
+                  <vueadv-computed/>
+                  <template #description>
+
                   </template>
 
                 </tip-block>

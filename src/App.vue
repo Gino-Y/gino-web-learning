@@ -832,7 +832,7 @@ const flag = ref(false)
                 </tip-block>
               </n-grid-item>
               <n-grid-item>
-]                <tip-block :tip_name="'VUE emission 组件及传参_子->父'"
+                <tip-block :tip_name="'VUE emission 组件及传参_子->父'"
                            :file_name="'vueadv-emits'"
                            :code='VueadvEmitsCode'
                 >

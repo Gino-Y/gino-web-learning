@@ -18,10 +18,10 @@ let age = ref()
 <template>
   {{msg}}
     <input type="text" v-model.lazy="msg" :disabled="msg==='hello'"><br>
-    <input type="checkbox" v-model="items" value="胸推">胸推<br>
-    <input type="checkbox" v-model="items" value="臀推">臀推<br>
-    <input type="checkbox" v-model="items" value="揉式">揉式<br>
-    <input type="checkbox" v-model="items" value="口爆">口爆<br>
+    <input type="checkbox" v-model="items" value="鲍鱼">鲍鱼<br>
+    <input type="checkbox" v-model="items" value="龙虾">龙虾<br>
+    <input type="checkbox" v-model="items" value="海参">海参<br>
+    <input type="checkbox" v-model="items" value="帝王蟹">帝王蟹<br>
     <div>{{items}}</div>
   <span v-for="item in items">{{item}}、</span>
 

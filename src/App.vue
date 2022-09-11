@@ -115,6 +115,8 @@ import VueadvEmits from "./components/vueadv-emits.vue";
 import VueadvEmitsCode from "./components/vueadv-emits.vue?raw";
 import VueadvCompoent from "./components/vueadv-compoent.vue";
 import VueadvCompoentCode from "./components/vueadv-compoent.vue?raw";
+import VueadvAxios from "./components/vueadv-axios.vue";
+import VueadvAxiosCode from "./components/vueadv-axios.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -849,6 +851,18 @@ const flag = ref(false)
                            :code='VueadvCompoentCode'
                 >
                   <vueadv-compoent/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE axios 动态组件'"
+                           :file_name="'vueadv-axios'"
+                           :code='VueadvAxiosCode'
+                >
+                  <vueadv-axios/>
                   <template #description>
 
                   </template>

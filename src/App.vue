@@ -4,8 +4,6 @@ import {
     NConfigProvider,
     NCard,
     NSpace,
-    NButton,
-    NTag,
     NLayout,
     NLayoutHeader,
     NLayoutContent,
@@ -15,8 +13,6 @@ import {
     NPagination,
     NGrid,
     NGridItem,
-    NPageHeader,
-    NMenu,
     NScrollbar,
     NSwitch
 } from 'naive-ui'
@@ -25,7 +21,6 @@ import { ref } from "vue";
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 
-import HelloWorld from './components/HelloWorld.vue'
 import ThemeSwitch from "./components/theme_switch.vue";
 import HtmlHeader from "./components/html-header.vue";
 import HtmlHeaderCode from "./components/html-header.vue?raw";
@@ -56,7 +51,6 @@ import CssBorderCode from "./components/css-border.vue?raw";
 import CssMouse from "./components/css-mouse.vue";
 import CssMouseCode from "./components/css-mouse.vue?raw";
 import TipBlock from "./components/elements/tip-block.vue";
-import TipBlockCode from "./components/elements/tip-block.vue?raw";
 import CssFloatBorder from "./components/css-float-border.vue";
 import CssFloatBorderCode from "./components/css-float-border.vue?raw";
 import CssChild from "./components/css-child.vue";
@@ -858,13 +852,14 @@ const flag = ref(false)
                 </tip-block>
               </n-grid-item>
               <n-grid-item>
-                <tip-block :tip_name="'VUE axios 动态组件'"
+                <tip-block :tip_name="'VUE axios 异步请求 前后交互'"
                            :file_name="'vueadv-axios'"
                            :code='VueadvAxiosCode'
                 >
                   <vueadv-axios/>
                   <template #description>
-
+                    utils/request.js 公共拦截器<br>
+                    api/index.js
                   </template>
 
                 </tip-block>

@@ -40,23 +40,29 @@ const selected = computed(()=>arr=>{
     </div>
   </n-card>
 
-  <div class="items">
-    <div class="items" v-for="(v, i) in items" key="i">
-      <input type="checkbox" v-model="v.check">
-      {{v.title}}{{v.price}}
+  <div class="flex">
+    <div class="items">
+      <div class="items" v-for="(v, i) in items" key="i">
+        <input type="checkbox" v-model="v.check">
+        {{v.title}}{{v.price}}
+      </div>
     </div>
-  </div>
 
-  <div class="items">
-    <div class="items" v-for="(v, i) in cate" key="i">
-      <input type="checkbox" v-model="v.check">
-      {{v.title}}{{v.price}}
+    <div class="items">
+      <div class="items" v-for="(v, i) in cate" key="i">
+        <input type="checkbox" v-model="v.check">
+        {{v.title}}{{v.price}}
+      </div>
     </div>
   </div>
 
 </template>
 
 <style scoped>
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
 .items{
   /*background-color: red;*/
   color: #bebebe;

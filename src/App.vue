@@ -105,6 +105,16 @@ import VueadvComputed02 from "./components/vueadv-computed02.vue";
 import VueadvComputed02Code from "./components/vueadv-computed02.vue?raw";
 import VueadvComputed from "./components/vueadv-computed.vue";
 import VueadvComputedCode from "./components/vueadv-computed.vue?raw";
+import VueadvWatch from "./components/vueadv-watch.vue";
+import VueadvWatchCode from "./components/vueadv-watch.vue?raw";
+import VueadvWatch02 from "./components/vueadv-watch02.vue";
+import VueadvWatch02Code from "./components/vueadv-watch02.vue?raw";
+import VueadvDefineprops from "./components/vueadv-defineprops.vue";
+import NumCode from "./components/elements/num.vue?raw";
+import VueadvEmits from "./components/vueadv-emits.vue";
+import VueadvEmitsCode from "./components/vueadv-emits.vue?raw";
+import VueadvCompoent from "./components/vueadv-compoent.vue";
+import VueadvCompoentCode from "./components/vueadv-compoent.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -776,6 +786,69 @@ const flag = ref(false)
                            :code='VueadvComputedCode'
                 >
                   <vueadv-computed/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE watch 监听'"
+                           :file_name="'vueadv-watch02'"
+                           :code='VueadvWatch02Code'
+                >
+                  <vueadv-watch02/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE watch 监听和清除监听'"
+                           :file_name="'vueadv-watch'"
+                           :code='VueadvWatchCode'
+                >
+                  <vueadv-watch/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+
+                <tip-block :tip_name="'VUE defineProps 组件及传参_父->子'"
+                           :file_name="'num'"
+                           :code='NumCode'
+                >
+                  <vueadv-defineprops/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+]                <tip-block :tip_name="'VUE emission 组件及传参_子->父'"
+                           :file_name="'vueadv-emits'"
+                           :code='VueadvEmitsCode'
+                >
+                  <vueadv-emits/>
+                  <template #description>
+
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE Compoent 动态组件'"
+                           :file_name="'vueadv-compoent'"
+                           :code='VueadvCompoentCode'
+                >
+                  <vueadv-compoent/>
                   <template #description>
 
                   </template>

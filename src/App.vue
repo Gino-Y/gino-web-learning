@@ -861,7 +861,7 @@ const flag = ref(false)
                   <vueadv-axios/>
                   <template #description>
                     utils/request.js 公共拦截器<br>
-                    api/index.js<br>
+                    api/index.js 应用程序接口<br>
                     数据 父传子 用这种
                   </template>
 
@@ -875,7 +875,7 @@ const flag = ref(false)
                   <vueadv-async/>
                   <template #description>
                     utils/request.js 公共拦截器<br>
-                    api/index.js<br>
+                    api/index.js 应用程序接口<br>
                     数据 子组件中获得 无需父传子 用这种
                   </template>
 

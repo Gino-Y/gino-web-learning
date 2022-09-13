@@ -3,7 +3,6 @@ import {NScrollbar, NGrid, NGridItem} from 'naive-ui'
 import {ref, onMounted} from "vue";
 import Commodity from './elements/commodity.vue'
 
-
 import {getData} from '../api'
 
 const lists = ref([]); //列表数据
@@ -14,12 +13,6 @@ onMounted(async()=>{
   lists.value = data; //数据存到上面的列表数据中
 })
 
-const active = ref(false);
-const placement = ref("right");
-const activate = (place) => {
-  active.value = true;
-  placement.value = place;
-};
 </script>
 
 <template>

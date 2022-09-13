@@ -111,6 +111,8 @@ import VueadvCompoent from "./components/vueadv-compoent.vue";
 import VueadvCompoentCode from "./components/vueadv-compoent.vue?raw";
 import VueadvAxios from "./components/vueadv-axios.vue";
 import VueadvAxiosCode from "./components/vueadv-axios.vue?raw";
+import VueadvAsync from "./components/vueadv-async.vue";
+import VueadvAsyncCode from "./components/vueadv-async.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -852,14 +854,29 @@ const flag = ref(false)
                 </tip-block>
               </n-grid-item>
               <n-grid-item>
-                <tip-block :tip_name="'VUE axios 异步请求 前后交互'"
+                <tip-block :tip_name="'VUE axios 异步同步化 前后交互'"
                            :file_name="'vueadv-axios'"
                            :code='VueadvAxiosCode'
                 >
                   <vueadv-axios/>
                   <template #description>
                     utils/request.js 公共拦截器<br>
-                    api/index.js
+                    api/index.js<br>
+                    数据 父传子 用这种
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE async 异步组件 前后交互'"
+                           :file_name="'vueadv-async'"
+                           :code='VueadvAsyncCode'
+                >
+                  <vueadv-async/>
+                  <template #description>
+                    utils/request.js 公共拦截器<br>
+                    api/index.js<br>
+                    数据 子组件中获得 无需父传子 用这种
                   </template>
 
                 </tip-block>

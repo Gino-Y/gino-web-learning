@@ -113,6 +113,14 @@ import VueadvAxios from "./components/vueadv-axios.vue";
 import VueadvAxiosCode from "./components/vueadv-axios.vue?raw";
 import VueadvAsync from "./components/vueadv-async.vue";
 import VueadvAsyncCode from "./components/vueadv-async.vue?raw";
+import VueadvRouter from "./components/vueadv-router.vue";
+import VueadvRouterCode from "./components/vueadv-router.vue?raw";
+import VueadvRouter02 from "./components/vueadv-router02.vue";
+import VueadvRouter02Code from "./components/vueadv-router02.vue?raw";
+import VueadvRouter03 from "./components/vueadv-router03.vue";
+import VueadvRouter03Code from "./components/vueadv-router03.vue?raw";
+import VueadvRouter04 from "./components/vueadv-router04.vue";
+import VueadvRouter04Code from "./components/vueadv-router04.vue?raw";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -136,7 +144,6 @@ const flag = ref(false)
             <n-space justify="end">
 
               <ThemeSwitch />   <!-- -- -->
-<!--              <n-switch v-model:value="active" />-->
               <n-switch v-model:value="flag">
                 <template #checked >
                   深色
@@ -146,13 +153,6 @@ const flag = ref(false)
                 </template>
               </n-switch>
 
-<!--              <n-button @click="theme = darkTheme" color="#363636">-->
-<!--                深色-->
-<!--              </n-button>-->
-<!--              <n-button @click="theme = null" color="#d3d3d3">-->
-<!--                浅色-->
-<!--              </n-button>-->
-
             </n-space>
           </n-card>
 
@@ -161,8 +161,7 @@ const flag = ref(false)
         <n-layout has-sider>
           <n-layout-sider content-style="padding: 240px;">
 
-<!--            <n-card :bordered="false" embedded>-->
-<!--            <div style="height: 300px">-->
+            <n-card :bordered="false" embedded>
               <n-anchor
                   affix
                   listen-to=".document-scroll-container"
@@ -191,8 +190,7 @@ const flag = ref(false)
                 </n-anchor-link>
                 <n-anchor-link title="Props" href="#Props" />
               </n-anchor>
-<!--            </div>-->
-<!--            </n-card>-->
+            </n-card>
 
           </n-layout-sider>
 
@@ -877,6 +875,52 @@ const flag = ref(false)
                     utils/request.js 公共拦截器<br>
                     api/index.js 应用程序接口<br>
                     数据 子组件中获得 无需父传子 用这种
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE router 路由'"
+                           :file_name="'vueadv-router'"
+                           :code='VueadvRouterCode'
+                >
+                  <vueadv-router/>
+                  <template #description>
+                    router-link 声明式<br>
+                    router.push('/home') 编程式
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE router 多级路由'"
+                           :file_name="'vueadv-router02'"
+                           :code='VueadvRouter02Code'
+                >
+                  <vueadv-router02/>
+                  <template #description>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE router 动态配置'"
+                           :file_name="'vueadv-router03'"
+                           :code='VueadvRouter03Code'
+                >
+                  <vueadv-router03/>
+                  <template #description>
+                  </template>
+
+                </tip-block>
+              </n-grid-item>
+              <n-grid-item>
+                <tip-block :tip_name="'VUE router 多出口配置'"
+                           :file_name="'vueadv-router04'"
+                           :code='VueadvRouter04Code'
+                >
+                  <vueadv-router04/>
+                  <template #description>
                   </template>
 
                 </tip-block>

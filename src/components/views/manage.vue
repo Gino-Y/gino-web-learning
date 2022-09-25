@@ -13,8 +13,8 @@ function goBack(){
 <template>
   <div>manage</div>
   <n-button @click="goBack">回到首页</n-button><br>
-  <router-link to="/home?name='Gino'">回到首页-通过query传参</router-link>
-  <router-link :to="{path:'/home', query:{name:'Tina'}}">回到首页-通过query传参</router-link>
+  <router-link to="/vue/router/home?name='Gino'">回到首页-通过query传参</router-link>
+  <router-link :to="{path:'/vue/router/home', query:{name:'Tina'}}">回到首页-通过query传参</router-link>
 </template>
 
 <style scoped>

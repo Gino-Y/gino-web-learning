@@ -25,10 +25,9 @@ const id = ref(88)
 
 <style scoped>
 .vertical{
-  //width: 70px;
+  /*width: 70px;*/
   display: flex;
   flex-direction: column;
-  //background-color: #3b0749;
 }
 .out{
   display: flex;

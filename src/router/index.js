@@ -37,7 +37,7 @@ const routes = [
                 component: ()=> import('../components/views/vue-router-page.vue'),
                 children:[
                     {
-                        path: '/home',
+                        path: 'home',
                         name:'home',
                         components:{
                             default:()=> import('../components/views/home.vue'),
@@ -46,17 +46,17 @@ const routes = [
                         }
                     },
                     {
-                        path: '/manage',
+                        path: 'manage',
                         name:'manage',
                         component: ()=> import('../components/views/manage.vue')
                     },
                     {
-                        path: '/list/:id', // 变量
+                        path: 'list/:id', // 变量
                         name:'list',
                         component: ()=> import('../components/views/list.vue')
                     },
                     {
-                        path: '/user',
+                        path: 'user',
                         name:'user',
                         component: ()=> import('../components/user/index.vue'),
                         children:[

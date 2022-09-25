@@ -6,27 +6,27 @@ const id = ref(88)
 const items = ref([
   {
     title:'首页',
-    url:'/home',
+    url:'/vue/router/home',
   },
   {
     title:'企业管理',
-    url:'/manage',
+    url:'/vue/router/manage',
   },
   {
     title:'列表管理',
-    url:'/list/0',
+    url:'/vue/router/list/0',
   },
   {
     title:'用户信息',
-    url:'/user',
+    url:'/vue/router/user',
     child:[
       {
         title:'用户详情',
-        url:'/user/userInfo'
+        url:'/vue/router/user/userInfo'
       },
       {
         title:'用户管理',
-        url:'/user/userManage'
+        url:'/vue/router/user/userManage'
       },
     ]
   },

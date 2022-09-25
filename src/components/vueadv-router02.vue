@@ -9,9 +9,9 @@ const id = ref(88)
   <div class="out">
     <div class="in">
       <div class="vertical">
-        <router-link class="text" to="/user">用户信息</router-link>
-        <router-link class="text" to="/user/userInfo">用户详情</router-link>
-        <router-link class="text" to="/user/userManage">用户管理</router-link>
+        <router-link class="text" to="/vue/router/user">用户信息</router-link>
+        <router-link class="text" to="/vue/router/user/userInfo">用户详情</router-link>
+        <router-link class="text" to="/vue/router/user/userManage">用户管理</router-link>
       </div>
     </div>
     <div class="in">

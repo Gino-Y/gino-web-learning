@@ -9,7 +9,7 @@ const id = ref(88)
   <div class="out">
     <div class="in">
       <div class="vertical">
-        <router-link class="text" to="/home">首页</router-link>
+        <router-link class="text" to="/vue/router/home">首页</router-link>
       </div>
     </div>
     <div class="in">

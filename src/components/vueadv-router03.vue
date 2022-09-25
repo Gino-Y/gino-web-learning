@@ -14,7 +14,7 @@ const items = ref([
   },
   {
     title:'列表管理',
-    url:'/list',
+    url:'/list/0',
   },
   {
     title:'用户信息',

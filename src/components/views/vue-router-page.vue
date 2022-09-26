@@ -13,6 +13,8 @@ import VueadvRouter03 from "../vueadv-router03.vue";
 import VueadvRouter03Code from "../vueadv-router03.vue?raw";
 import VueadvRouter04 from "../vueadv-router04.vue";
 import VueadvRouter04Code from "../vueadv-router04.vue?raw";
+import VueadvRouter05 from "../vueadv-router05.vue";
+import VueadvRouter05Code from "../vueadv-router05.vue?raw";
 
 </script>
 
@@ -59,6 +61,17 @@ import VueadvRouter04Code from "../vueadv-router04.vue?raw";
                  :code='VueadvRouter04Code'
       >
         <vueadv-router04/>
+        <template #description>
+        </template>
+
+      </tip-block>
+    </n-grid-item>
+    <n-grid-item>
+      <tip-block :tip_name="'VUE router 路由守卫'"
+                 :file_name="'vueadv-router05'"
+                 :code='VueadvRouter05Code'
+      >
+        <vueadv-router05/>
         <template #description>
         </template>
 

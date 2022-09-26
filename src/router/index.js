@@ -32,6 +32,16 @@ const routes = [
                 component: ()=> import('../components/views/vue-basics02-page.vue')
             },
             {
+                path: 'component',
+                name:'component',
+                component: ()=> import('../components/views/vue-component-page.vue')
+            },
+            {
+                path: 'axios',
+                name:'axios',
+                component: ()=> import('../components/views/vue-axios-page.vue')
+            },
+            {
                 path: 'router',
                 name:'router',
                 component: ()=> import('../components/views/vue-router-page.vue'),
@@ -40,7 +50,7 @@ const routes = [
                         path: 'home',
                         name:'home',
                         components:{
-                            default:()=> import('../components/views/home.vue'),
+                            default:()=> import('../components/views/router_home.vue'),
                             axios:()=> import('../components/vueadv-axios.vue'),
                             computed:()=> import('../components/vueadv-computed.vue'),
                         }
@@ -48,12 +58,12 @@ const routes = [
                     {
                         path: 'manage',
                         name:'manage',
-                        component: ()=> import('../components/views/manage.vue')
+                        component: ()=> import('../components/views/router_manage.vue')
                     },
                     {
                         path: 'list/:id', // 变量
                         name:'list',
-                        component: ()=> import('../components/views/list.vue')
+                        component: ()=> import('../components/views/router_list.vue')
                     },
                     {
                         path: 'user',

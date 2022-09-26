@@ -31,10 +31,6 @@ import VueadvEmits from "../vueadv-emits.vue";
 import VueadvEmitsCode from "../vueadv-emits.vue?raw";
 import VueadvCompoent from "../vueadv-compoent.vue";
 import VueadvCompoentCode from "../vueadv-compoent.vue?raw";
-import VueadvAxios from "../vueadv-axios.vue";
-import VueadvAxiosCode from "../vueadv-axios.vue?raw";
-import VueadvAsync from "../vueadv-async.vue";
-import VueadvAsyncCode from "../vueadv-async.vue?raw";
 
 </script>
 
@@ -166,71 +162,6 @@ import VueadvAsyncCode from "../vueadv-async.vue?raw";
         <vueadv-watch/>
         <template #description>
 
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-
-      <tip-block :tip_name="'VUE defineProps 组件及传参_父->子'"
-                 :file_name="'num'"
-                 :code='NumCode'
-      >
-        <vueadv-defineprops/>
-        <template #description>
-
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-      <tip-block :tip_name="'VUE emission 组件及传参_子->父'"
-                 :file_name="'vueadv-emits'"
-                 :code='VueadvEmitsCode'
-      >
-        <vueadv-emits/>
-        <template #description>
-
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-      <tip-block :tip_name="'VUE Compoent 动态组件'"
-                 :file_name="'vueadv-compoent'"
-                 :code='VueadvCompoentCode'
-      >
-        <vueadv-compoent/>
-        <template #description>
-
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-      <tip-block :tip_name="'VUE axios 异步同步化 前后交互'"
-                 :file_name="'vueadv-axios'"
-                 :code='VueadvAxiosCode'
-      >
-        <vueadv-axios/>
-        <template #description>
-          utils/request.js 公共拦截器<br>
-          api/index.js 应用程序接口<br>
-          数据 父传子 用这种
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-      <tip-block :tip_name="'VUE async 异步组件 前后交互'"
-                 :file_name="'vueadv-async'"
-                 :code='VueadvAsyncCode'
-      >
-        <vueadv-async/>
-        <template #description>
-          utils/request.js 公共拦截器<br>
-          api/index.js 应用程序接口<br>
-          数据 子组件中获得 无需父传子 用这种
         </template>
 
       </tip-block>

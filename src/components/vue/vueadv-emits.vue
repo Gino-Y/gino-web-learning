@@ -15,7 +15,7 @@ function myclick(v) { // 接收子的行为 v就是子传过来的数据
   <emits_sub @subClick="myclick"/><br>
   上面按钮是子组件按钮<br>
   下面的展示框是父组件，<br>
-  其中响应后的数据是子组件中的数据
+  其中响应后的数据是子组件中的数据<br>
   <n-tag size="large" :bordered="false" >父组件展示的: {{msg}}</n-tag>
 </template>
 

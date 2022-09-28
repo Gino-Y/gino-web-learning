@@ -112,4 +112,7 @@ const flag = ref(false)
   align-items: center;
   justify-content: center;
 }
+*{
+  white-space: nowrap;
+}
 </style>

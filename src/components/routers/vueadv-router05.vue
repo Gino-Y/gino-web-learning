@@ -46,5 +46,6 @@ function sign() {
 }
 .text{
   text-decoration: none;
+  white-space: nowrap;
 }
 </style>

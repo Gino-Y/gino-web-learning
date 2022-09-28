@@ -1,9 +1,9 @@
 <script setup>
 import {NScrollbar, NGrid, NGridItem} from 'naive-ui'
 import {ref, onMounted} from "vue";
-import Commodity from './elements/commodity.vue'
+import Commodity from '../elements/commodity.vue'
 
-import {getData} from '../api'
+import {getData} from '../../api'
 
 const lists = ref([]); //列表数据
 

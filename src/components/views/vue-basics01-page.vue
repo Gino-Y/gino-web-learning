@@ -5,18 +5,18 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import VueVfor from "../vue-vfor.vue";
-import VueVforCode from "../vue-vfor.vue?raw";
-import VueVif from "../vue-vif.vue";
-import VueVifCode from "../vue-vif.vue?raw";
-import VueVtest from "../vue-vtest.vue";
-import VueVtestCode from "../vue-vtest.vue?raw";
-import VueVon from "../vue-von.vue";
-import VueVonCode from "../vue-von.vue?raw";
-import VueVbind from "../vue-vbind.vue";
-import VueVbindCode from "../vue-vbind.vue?raw";
-import VueVmodel from "../vue-vmodel.vue";
-import VueVmodelCode from "../vue-vmodel.vue?raw";
+import VueVfor from "../vue/vue-vfor.vue";
+import VueVforCode from "../vue/vue-vfor.vue?raw";
+import VueVif from "../vue/vue-vif.vue";
+import VueVifCode from "../vue/vue-vif.vue?raw";
+import VueVtest from "../vue/vue-vtest.vue";
+import VueVtestCode from "../vue/vue-vtest.vue?raw";
+import VueVon from "../vue/vue-von.vue";
+import VueVonCode from "../vue/vue-von.vue?raw";
+import VueVbind from "../vue/vue-vbind.vue";
+import VueVbindCode from "../vue/vue-vbind.vue?raw";
+import VueVmodel from "../vue/vue-vmodel.vue";
+import VueVmodelCode from "../vue/vue-vmodel.vue?raw";
 
 </script>
 

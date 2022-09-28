@@ -1,7 +1,7 @@
 <script setup>
 import {NScrollbar, NGrid, NGridItem} from 'naive-ui'
 import {ref, onMounted} from "vue";
-import CommodityAsync from "./elements/commodity-async.vue";
+import CommodityAsync from "../elements/commodity-async.vue";
 
 </script>
 

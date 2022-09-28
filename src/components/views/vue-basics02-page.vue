@@ -5,32 +5,32 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import VueadvRef from "../vueadv-ref.vue";
-import VueadvRefCode from "../vueadv-ref.vue?raw";
-import VueadvTab1 from "../vueadv-tab1.vue";
-import VueadvTab1Code from "../vueadv-tab1.vue?raw";
-import VueadvTab2 from "../vueadv-tab2.vue";
-import VueadvTab2Code from "../vueadv-tab2.vue?raw";
-import VueadvAddtag from "../vueadv-addtag.vue";
-import VueadvAddtagCode from "../vueadv-addtag.vue?raw";
-import VueadvReactive from "../vueadv-reactive.vue";
-import VueadvReactiveCode from "../vueadv-reactive.vue?raw";
-import VueadvReftest from "../vueadv-reftest.vue";
-import VueadvReftestCode from "../vueadv-reftest.vue?raw";
-import VueadvComputed02 from "../vueadv-computed02.vue";
-import VueadvComputed02Code from "../vueadv-computed02.vue?raw";
-import VueadvComputed from "../vueadv-computed.vue";
-import VueadvComputedCode from "../vueadv-computed.vue?raw";
-import VueadvWatch from "../vueadv-watch.vue";
-import VueadvWatchCode from "../vueadv-watch.vue?raw";
-import VueadvWatch02 from "../vueadv-watch02.vue";
-import VueadvWatch02Code from "../vueadv-watch02.vue?raw";
-import VueadvDefineprops from "../vueadv-defineprops.vue";
+import VueadvRef from "../vue/vueadv-ref.vue";
+import VueadvRefCode from "../vue/vueadv-ref.vue?raw";
+import VueadvTab1 from "../vue/vueadv-tab1.vue";
+import VueadvTab1Code from "../vue/vueadv-tab1.vue?raw";
+import VueadvTab2 from "../vue/vueadv-tab2.vue";
+import VueadvTab2Code from "../vue/vueadv-tab2.vue?raw";
+import VueadvAddtag from "../vue/vueadv-addtag.vue";
+import VueadvAddtagCode from "../vue/vueadv-addtag.vue?raw";
+import VueadvReactive from "../vue/vueadv-reactive.vue";
+import VueadvReactiveCode from "../vue/vueadv-reactive.vue?raw";
+import VueadvReftest from "../vue/vueadv-reftest.vue";
+import VueadvReftestCode from "../vue/vueadv-reftest.vue?raw";
+import VueadvComputed02 from "../vue/vueadv-computed02.vue";
+import VueadvComputed02Code from "../vue/vueadv-computed02.vue?raw";
+import VueadvComputed from "../vue/vueadv-computed.vue";
+import VueadvComputedCode from "../vue/vueadv-computed.vue?raw";
+import VueadvWatch from "../vue/vueadv-watch.vue";
+import VueadvWatchCode from "../vue/vueadv-watch.vue?raw";
+import VueadvWatch02 from "../vue/vueadv-watch02.vue";
+import VueadvWatch02Code from "../vue/vueadv-watch02.vue?raw";
+import VueadvDefineprops from "../vue/vueadv-defineprops.vue";
 import NumCode from "../elements/num.vue?raw";
-import VueadvEmits from "../vueadv-emits.vue";
-import VueadvEmitsCode from "../vueadv-emits.vue?raw";
-import VueadvCompoent from "../vueadv-compoent.vue";
-import VueadvCompoentCode from "../vueadv-compoent.vue?raw";
+import VueadvEmits from "../vue/vueadv-emits.vue";
+import VueadvEmitsCode from "../vue/vueadv-emits.vue?raw";
+import VueadvCompoent from "../vue/vueadv-compoent.vue";
+import VueadvCompoentCode from "../vue/vueadv-compoent.vue?raw";
 
 </script>
 

@@ -1,7 +1,7 @@
 <script setup>
 import {ref, reactive, computed} from "vue";
-import CompoentA from "./elements/compoent_A.vue";
-import CompoentB from "./elements/compoent_B.vue";
+import CompoentA from "../elements/compoent_A.vue";
+import CompoentB from "../elements/compoent_B.vue";
 import {NButton, NSpace} from "naive-ui";
 
 const flag = ref(CompoentA)

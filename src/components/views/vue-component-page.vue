@@ -5,12 +5,12 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import VueadvDefineprops from "../vueadv-defineprops.vue";
+import VueadvDefineprops from "../vue/vueadv-defineprops.vue";
 import NumCode from "../elements/num.vue?raw";
-import VueadvEmits from "../vueadv-emits.vue";
-import VueadvEmitsCode from "../vueadv-emits.vue?raw";
-import VueadvCompoent from "../vueadv-compoent.vue";
-import VueadvCompoentCode from "../vueadv-compoent.vue?raw";
+import VueadvEmits from "../vue/vueadv-emits.vue";
+import VueadvEmitsCode from "../vue/vueadv-emits.vue?raw";
+import VueadvCompoent from "../vue/vueadv-compoent.vue";
+import VueadvCompoentCode from "../vue/vueadv-compoent.vue?raw";
 
 </script>
 

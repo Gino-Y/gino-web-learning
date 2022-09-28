@@ -5,16 +5,16 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import VueadvRouter from "../vueadv-router.vue";
-import VueadvRouterCode from "../vueadv-router.vue?raw";
-import VueadvRouter02 from "../vueadv-router02.vue";
-import VueadvRouter02Code from "../vueadv-router02.vue?raw";
-import VueadvRouter03 from "../vueadv-router03.vue";
-import VueadvRouter03Code from "../vueadv-router03.vue?raw";
-import VueadvRouter04 from "../vueadv-router04.vue";
-import VueadvRouter04Code from "../vueadv-router04.vue?raw";
-import VueadvRouter05 from "../vueadv-router05.vue";
-import VueadvRouter05Code from "../vueadv-router05.vue?raw";
+import VueadvRouter from "../routers/vueadv-router.vue";
+import VueadvRouterCode from "../routers/vueadv-router.vue?raw";
+import VueadvRouter02 from "../routers/vueadv-router02.vue";
+import VueadvRouter02Code from "../routers/vueadv-router02.vue?raw";
+import VueadvRouter03 from "../routers/vueadv-router03.vue";
+import VueadvRouter03Code from "../routers/vueadv-router03.vue?raw";
+import VueadvRouter04 from "../routers/vueadv-router04.vue";
+import VueadvRouter04Code from "../routers/vueadv-router04.vue?raw";
+import VueadvRouter05 from "../routers/vueadv-router05.vue";
+import VueadvRouter05Code from "../routers/vueadv-router05.vue?raw";
 
 </script>
 

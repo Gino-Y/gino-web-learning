@@ -1,7 +1,7 @@
 <script setup>
 import {ref, reactive, computed} from "vue";
 import {NTag} from 'naive-ui'
-import Emits_sub from "./elements/emits_sub.vue";
+import Emits_sub from "../elements/emits_sub.vue";
 
 let title = ref('查看详情')
 let msg = ref('父组件数据')

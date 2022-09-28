@@ -50,20 +50,44 @@ const routes = [
                         path: 'home',
                         name:'home',
                         components:{
-                            default:()=> import('../components/views/router-home.vue'),
-                            axios:()=> import('../components/vueadv-axios.vue'),
-                            computed:()=> import('../components/vueadv-computed.vue'),
+                            default:()=> import('../components/routers/home.vue'),
+                            axios:()=> import('../components/vue/vueadv-axios.vue'),
+                            computed:()=> import('../components/vue/vueadv-computed.vue'),
                         }
                     },
                     {
                         path: 'manage',
                         name:'manage',
-                        component: ()=> import('../components/views/router-manage.vue')
+                        component: ()=> import('../components/routers/manage.vue')
                     },
                     {
                         path: 'list/:id', // 变量
                         name:'list',
-                        component: ()=> import('../components/views/router-list.vue')
+                        component: ()=> import('../components/routers/list.vue')
+                    },
+                    {
+                        path: 'guard', // 变量
+                        name:'guard',
+                        component: ()=> import('../components/routers/guard.vue'),
+                        beforeEnter:(to, from, next)=>{
+                            if(sessionStorage.getItem('sign')){
+                                next()
+                            }else {
+                                alert('请签到')
+                                // next() // 提示后允许进入，添加next()，不允许则不需要添加
+                            }
+
+                            // if(!sessionStorage.getItem('sign')){
+                            //     if(to.path != '/vue/router/home'){
+                            //         alert('请签到！')
+                            //     }else {
+                            //         next()
+                            //     }
+                            // }else {
+                            //     next()
+                            // }
+
+                        }
                     },
                     {
                         path: 'user',

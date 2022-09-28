@@ -22,6 +22,7 @@ import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 
 import ThemeSwitch from "./components/theme_switch.vue";
+import MenuPage from "./components/views/menu-page.vue";
 
 
 // import html from 'highlight.js/lib/languages/html'
@@ -62,46 +63,7 @@ const flag = ref(false)
         <n-layout has-sider>
           <n-layout-sider content-style="padding: 240px;">
 
-            <n-card :bordered="false" embedded>
-              <n-anchor
-                  affix
-                  listen-to=".document-scroll-container"
-                  :trigger-top="24"
-                  :top="88"
-                  style="z-index: 1; opacity: 0.3"
-                  :bound="240"
-              >
-                <n-anchor-link title="演示" href="#演示">
-                  <router-link class="textc" to="/html">HTML</router-link>
-                  <router-link class="textc" to="/css">CSS</router-link>
-                  <router-link class="textc" to="/flex">Flex</router-link>
-<!--                  <router-link class="textc" to="/vue">VUE</router-link>-->
-                  <router-link class="textc" to="/vue/basics01">basics01</router-link>
-                  <router-link class="textc" to="/vue/basics02">basics02</router-link>
-                  <router-link class="textc" to="/vue/component">component</router-link>
-                  <router-link class="textc" to="/vue/axios">axios</router-link>
-                  <router-link class="textc" to="/vue/router">router</router-link>
-                  <n-anchor-link title="基础用法" href="#basic" />
-                  <n-anchor-link title="忽略间隔" href="#ignore-gap" />
-                  <n-anchor-link title="固定" href="#affix" />
-                  <n-anchor-link title="滚动到" href="#scrollto" />
-                  <n-anchor-link title="基础用法" href="#basic" />
-                  <n-anchor-link title="忽略间隔" href="#ignore-gap" />
-                  <n-anchor-link title="固定" href="#affix" />
-                  <n-anchor-link title="滚动到" href="#scrollto" />
-                  <n-anchor-link title="基础用法" href="#basic" />
-                  <n-anchor-link title="忽略间隔" href="#ignore-gap" />
-                  <n-anchor-link title="固定" href="#affix" />
-                  <n-anchor-link title="滚动到" href="#scrollto" />
-                  <n-anchor-link title="基础用法" href="#basic" />
-                  <n-anchor-link title="忽略间隔" href="#ignore-gap" />
-                  <n-anchor-link title="固定" href="#affix" />
-                  <n-anchor-link title="滚动到" href="#scrollto" />
-                </n-anchor-link>
-                <n-anchor-link title="Props" href="#Props" />
-              </n-anchor>
-            </n-card>
-
+            <menu-page/>
           </n-layout-sider>
 
 
@@ -149,9 +111,5 @@ const flag = ref(false)
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.textc{
-  text-decoration: none;
-  color: white;
 }
 </style>

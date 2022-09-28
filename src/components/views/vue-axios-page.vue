@@ -5,10 +5,10 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import VueadvAxios from "../vueadv-axios.vue";
-import VueadvAxiosCode from "../vueadv-axios.vue?raw";
-import VueadvAsync from "../vueadv-async.vue";
-import VueadvAsyncCode from "../vueadv-async.vue?raw";
+import VueadvAxios from "../vue/vueadv-axios.vue";
+import VueadvAxiosCode from "../vue/vueadv-axios.vue?raw";
+import VueadvAsync from "../vue/vueadv-async.vue";
+import VueadvAsyncCode from "../vue/vueadv-async.vue?raw";
 
 </script>
 

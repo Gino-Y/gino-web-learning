@@ -5,24 +5,24 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import CssSelector from "../css-selector.vue";
-import CssSelectorCode from "../css-selector.vue?raw";
-import CssFont from "../css-font.vue";
-import CssFontCode from "../css-font.vue?raw";
-import CssFontOther from "../css-font-other.vue";
-import CssFontOtherCode from "../css-font-other.vue?raw";
-import CssMargin from "../css-margin.vue";
-import CssMarginCode from "../css-margin.vue?raw";
-import CssBorder from "../css-border.vue";
-import CssBorderCode from "../css-border.vue?raw";
-import CssMouse from "../css-mouse.vue";
-import CssMouseCode from "../css-mouse.vue?raw";
-import CssFloatBorder from "../css-float-border.vue";
-import CssFloatBorderCode from "../css-float-border.vue?raw";
-import CssChild from "../css-child.vue";
-import CssChildCode from "../css-child.vue?raw";
-import CssRelativeAbsolute from "../css-relative-absolute.vue";
-import CssRelativeAbsoluteCode from "../css-relative-absolute.vue?raw";
+import CssSelector from "../css/css-selector.vue";
+import CssSelectorCode from "../css/css-selector.vue?raw";
+import CssFont from "../css/css-font.vue";
+import CssFontCode from "../css/css-font.vue?raw";
+import CssFontOther from "../css/css-font-other.vue";
+import CssFontOtherCode from "../css/css-font-other.vue?raw";
+import CssMargin from "../css/css-margin.vue";
+import CssMarginCode from "../css/css-margin.vue?raw";
+import CssBorder from "../css/css-border.vue";
+import CssBorderCode from "../css/css-border.vue?raw";
+import CssMouse from "../css/css-mouse.vue";
+import CssMouseCode from "../css/css-mouse.vue?raw";
+import CssFloatBorder from "../css/css-float-border.vue";
+import CssFloatBorderCode from "../css/css-float-border.vue?raw";
+import CssChild from "../css/css-child.vue";
+import CssChildCode from "../css/css-child.vue?raw";
+import CssRelativeAbsolute from "../css/css-relative-absolute.vue";
+import CssRelativeAbsoluteCode from "../css/css-relative-absolute.vue?raw";
 
 </script>
 

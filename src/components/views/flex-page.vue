@@ -5,20 +5,20 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import CssFlexDefine from "../css-flex-define.vue";
-import CssFlexDefineCode from "../css-flex-define.vue?raw";
-import CssFlexDirection from "../css-flex-direction.vue";
-import CssFlexDirectionCode from "../css-flex-direction.vue?raw";
-import CssFlexOverflow from "../css-flex-overflow.vue";
-import CssFlexOverflowCode from "../css-flex-overflow.vue?raw";
-import CssFlexFlow from "../css-flex-flow.vue";
-import CssFlexFlowCode from "../css-flex-flow.vue?raw";
-import CssFlexJustify from "../css-flex-justify.vue";
-import CssFlexJustifyCode from "../css-flex-justify.vue?raw";
-import CssFlexAlign from "../css-flex-align.vue";
-import CssFlexAlignCode from "../css-flex-align.vue?raw";
-import CssFlexCenter from "../css-flex-center.vue";
-import CssFlexCenterCode from "../css-flex-center.vue?raw";
+import CssFlexDefine from "../css/css-flex-define.vue";
+import CssFlexDefineCode from "../css/css-flex-define.vue?raw";
+import CssFlexDirection from "../css/css-flex-direction.vue";
+import CssFlexDirectionCode from "../css/css-flex-direction.vue?raw";
+import CssFlexOverflow from "../css/css-flex-overflow.vue";
+import CssFlexOverflowCode from "../css/css-flex-overflow.vue?raw";
+import CssFlexFlow from "../css/css-flex-flow.vue";
+import CssFlexFlowCode from "../css/css-flex-flow.vue?raw";
+import CssFlexJustify from "../css/css-flex-justify.vue";
+import CssFlexJustifyCode from "../css/css-flex-justify.vue?raw";
+import CssFlexAlign from "../css/css-flex-align.vue";
+import CssFlexAlignCode from "../css/css-flex-align.vue?raw";
+import CssFlexCenter from "../css/css-flex-center.vue";
+import CssFlexCenterCode from "../css/css-flex-center.vue?raw";
 
 </script>
 

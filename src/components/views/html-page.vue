@@ -5,22 +5,22 @@ import {
 } from 'naive-ui'
 import TipBlock from "../elements/tip-block.vue";
 
-import HtmlHeader from "../html-header.vue";
-import HtmlHeaderCode from "../html-header.vue?raw";
-import HtmlParagraph from "../html-paragraph.vue";
-import HtmlParagraphCode from "../html-paragraph.vue?raw";
-import HtmlHyperlink from "../html-hyperlink.vue";
-import HtmlHyperlinkCode from "../html-hyperlink.vue?raw";
-import HtmlImage from "../html-image.vue";
-import HtmlImageCode from "../html-image.vue?raw";
-import HtmlTable from "../html-table.vue";
-import HtmlTableCode from "../html-table.vue?raw";
-import HtmlList from "../html-list.vue";
-import HtmlListCode from "../html-list.vue?raw";
-import HtmlBlock from "../html-block.vue";
-import HtmlBlockCode from "../html-block.vue?raw";
-import HtmlInline from "../html-inline.vue";
-import HtmlInlineCode from "../html-inline.vue?raw";
+import HtmlHeader from "../html/html-header.vue";
+import HtmlHeaderCode from "../html/html-header.vue?raw";
+import HtmlParagraph from "../html/html-paragraph.vue";
+import HtmlParagraphCode from "../html/html-paragraph.vue?raw";
+import HtmlHyperlink from "../html/html-hyperlink.vue";
+import HtmlHyperlinkCode from "../html/html-hyperlink.vue?raw";
+import HtmlImage from "../html/html-image.vue";
+import HtmlImageCode from "../html/html-image.vue?raw";
+import HtmlTable from "../html/html-table.vue";
+import HtmlTableCode from "../html/html-table.vue?raw";
+import HtmlList from "../html/html-list.vue";
+import HtmlListCode from "../html/html-list.vue?raw";
+import HtmlBlock from "../html/html-block.vue";
+import HtmlBlockCode from "../html/html-block.vue?raw";
+import HtmlInline from "../html/html-inline.vue";
+import HtmlInlineCode from "../html/html-inline.vue?raw";
 
 </script>
 

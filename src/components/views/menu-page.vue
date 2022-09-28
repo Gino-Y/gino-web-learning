@@ -33,7 +33,7 @@ import {
         <router-link class="textc" to="/html">HTML</router-link>
         <router-link class="textc" to="/css">CSS</router-link>
         <router-link class="textc" to="/flex">Flex</router-link>
-<!--        <router-link class="textc" to="/vue">VUE</router-link>-->
+        <router-link class="textc" to="/vue">VUE</router-link>
         <router-link class="textc" to="/vue/basics01">basics01</router-link>
         <router-link class="textc" to="/vue/basics02">basics02</router-link>
         <router-link class="textc" to="/vue/component">component</router-link>

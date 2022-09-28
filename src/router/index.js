@@ -66,7 +66,7 @@ const routes = [
                         component: ()=> import('../components/routers/list.vue')
                     },
                     {
-                        path: 'guard', // 变量
+                        path: 'guard',
                         name:'guard',
                         component: ()=> import('../components/routers/guard.vue'),
                         beforeEnter:(to, from, next)=>{

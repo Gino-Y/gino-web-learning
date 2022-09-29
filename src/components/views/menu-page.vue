@@ -60,5 +60,6 @@ import {
   text-decoration: none;
   color: white;
   font-size: large;
+  text-align: left;
 }
 </style>

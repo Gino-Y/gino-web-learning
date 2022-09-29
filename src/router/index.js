@@ -76,17 +76,6 @@ const routes = [
                                 alert('请签到')
                                 // next() // 提示后允许进入，添加next()，不允许则不需要添加
                             }
-
-                            // if(!sessionStorage.getItem('sign')){
-                            //     if(to.path != '/vue/router/home'){
-                            //         alert('请签到！')
-                            //     }else {
-                            //         next()
-                            //     }
-                            // }else {
-                            //     next()
-                            // }
-
                         }
                     },
                     {

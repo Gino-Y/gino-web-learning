@@ -10,7 +10,7 @@ onMounted(()=>{
 
 function sign() {
   msg.value = '已签到'
-  sessionStorage.setItem('sing', true)
+  sessionStorage.setItem('sign', true)
 }
 </script>
 

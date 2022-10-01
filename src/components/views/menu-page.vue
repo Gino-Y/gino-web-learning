@@ -39,6 +39,7 @@ import {
         <router-link class="textc" to="/vue/component">component</router-link>
         <router-link class="textc" to="/vue/axios">axios</router-link>
         <router-link class="textc" to="/vue/router">router</router-link>
+        <router-link class="textc" to="/vue/pinia">pinia</router-link>
 <!--        <n-anchor-link title="基础用法" href="#basic" />-->
 <!--        <n-anchor-link title="忽略间隔" href="#ignore-gap" />-->
 <!--        <n-anchor-link title="固定" href="#affix" />-->

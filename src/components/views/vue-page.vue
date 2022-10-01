@@ -35,6 +35,10 @@ import VueRouterPage from "./vue-router-page.vue";
       <router-link class="textc" to="/vue/router">router</router-link>
     </div>
 
+    <div class="in">
+      <router-link class="textc" to="/vue/pinia">pinia</router-link>
+    </div>
+
   </div>
   <router-view/>
 </template>

@@ -103,6 +103,11 @@ const routes = [
 
                 ]
             },
+            {
+                path: 'pinia',
+                name:'pinia',
+                component: ()=> import('../components/views/vue-pinia-page.vue')
+            },
         ]
     },
 ]

@@ -17,10 +17,21 @@ export const mainStore = defineStore('main',{
             return this.count
         }
     },
-    actions:{
+    actions:{ // function
         addCount(n){
             this.count+=n
+            this.title = 'Tina'
         }
+    },
+    persist:{ // 持久化
+        enabled: true, // 开启
+        strategies:[
+            {
+                key:'main',
+                storage: sessionStorage, //
+                paths: ['count']
+            }
+        ]
     }
 })
 

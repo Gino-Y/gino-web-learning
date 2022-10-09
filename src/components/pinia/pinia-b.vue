@@ -6,7 +6,7 @@ const {title, count, getCount} = storeToRefs(store) // 解构且响应式
 </script>
 
 <template>
-  <div style="color: red">其他组件数量：{{count}}</div>
+  <div style="color: red">其他组件:数量：{{count}}</div>
 </template>
 
 <style scoped>

@@ -15,6 +15,11 @@ const c = computed(()=>store.getCount)
 function handleClick() {
   store.addCount(9)
 }
+
+function clear() {
+
+}
+
 </script>
 
 <template>
@@ -27,6 +32,7 @@ function handleClick() {
   <div>计算属性: {{c}}</div>
   <hr>
   <n-button @click="handleClick">Click me!</n-button>
+  <n-button @click="clear">重置持久化</n-button>
 </template>
 
 <style scoped>

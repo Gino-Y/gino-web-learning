@@ -3,12 +3,12 @@ import {NScrollbar, NGrid, NGridItem} from 'naive-ui'
 import {ref, onMounted} from "vue";
 import Commodity from '../elements/commodity.vue'
 
-import {getData} from '../../api'
+import {getList} from '../../api'
 
 const lists = ref([]); //列表数据
 
 onMounted(async()=>{
-  let res = await getData();
+  let res = await getList();
   let {data} = res.data;
   lists.value = data; //数据存到上面的列表数据中
 })

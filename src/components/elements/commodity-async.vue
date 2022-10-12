@@ -2,13 +2,13 @@
 import {NEllipsis, NScrollbar, NGrid, NGridItem} from 'naive-ui'
 import {ref} from "vue";
 
-import {getData} from '../../api'
+import {getList} from '../../api'
 
 const lists = ref([]); //列表数据
-const res = await getData()
+const res = await getList()
 lists.value = res.data.data
 
-// const lists = await getData().then(res=>res.data.data)
+// const lists = await getList().then(res=>res.data.data)
 
 </script>
 

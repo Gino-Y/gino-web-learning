@@ -1,6 +1,6 @@
 import axios from '../utils/request'
 
-export function getData(){
+export function getList(){
     return axios({
         method:'get',
         url:'home/page/6/10',

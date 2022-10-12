@@ -28,8 +28,8 @@ export const mainStore = defineStore('main',{
         strategies:[
             {
                 key:'main',
-                storage: sessionStorage, //
-                paths: ['count']
+                storage: sessionStorage, // 存储的方式
+                paths: ['count'] // 选择持久化的字段
             }
         ]
     }

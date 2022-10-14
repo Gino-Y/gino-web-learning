@@ -6,17 +6,18 @@ import {storeToRefs} from 'pinia'
 import {mainStore} from "../../store";
 const myListStore = listStore() // 实例化状态管理
 
-let items = ref([
-  {product_id: 1, product_name: 'Abc', product_uprice: 123},
-  {product_id: 2, product_name: 'Def', product_uprice: 456},
-  {product_id: 3, product_name: 'Ghi', product_uprice: 789},
-])
+// let items = ref([
+//   {product_id: 1, product_name: 'Abc', product_uprice: 123},
+//   {product_id: 2, product_name: 'Def', product_uprice: 456},
+//   {product_id: 3, product_name: 'Ghi', product_uprice: 789},
+// ])
 
 // 异步请求
-async function query(){
-  let res = await myListStore.getData()
-  items.value = res.data.data
+function query(){
+  myListStore.getData()
 }
+
+const {items} = storeToRefs(myListStore); //
 </script>
 
 <template>

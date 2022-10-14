@@ -12,9 +12,9 @@ export const listStore = defineStore('list',{
         }
     },
     actions:{ // function
-        async getData(){
+        async getData(){ // 在pinia中发送请求
             let res = await getList();
-            this.items = res.data.data;
+            this.items = res.data.data; //请求到的数据保存在state.items
         }
     },
     persist:{ // 持久化

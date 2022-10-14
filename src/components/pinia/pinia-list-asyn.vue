@@ -37,7 +37,7 @@ function query(){
 <template>
  <div>
    <h1>Show List666</h1>
-   <n-button @click="query">Query Data888</n-button>
+   <n-button @click="query">Query Data</n-button>
    <table cellpadding="0" cellspacing="0">
      <thead>
       <tr>

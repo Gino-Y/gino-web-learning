@@ -19,6 +19,13 @@ export const listStore = defineStore('list',{
     },
     persist:{ // 持久化
         enabled: true, // 开启
+        // strategies:[
+        //     {
+        //         key:'list',
+        //         storage: sessionStorage, // 存储的方式
+        //         paths: ['product_name'] // 选择持久化的字段
+        //     }
+        // ]
     }
 
 })

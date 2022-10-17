@@ -1,18 +1,15 @@
 <script setup>
 import {NButton, NEllipsis, NTable} from 'naive-ui'
-import {ref} from 'vue'
+
 import {listStore} from "../../store/list"; // 导入状态管理
 import {storeToRefs} from 'pinia'
-import {mainStore} from "../../store";
 const myListStore = listStore() // 实例化状态管理
-
-
+const {items} = storeToRefs(myListStore); //
 // 异步请求
 function query(){
   myListStore.getData()
 }
 
-const {items} = storeToRefs(myListStore); //
 </script>
 
 <template>

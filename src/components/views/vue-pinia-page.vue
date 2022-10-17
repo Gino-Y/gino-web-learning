@@ -11,8 +11,6 @@ import Pinia from "../pinia/pinia.vue";
 import PiniaCode from "../pinia/pinia.vue?raw";
 import PiniaListAsyn from "../pinia/pinia-list-asyn.vue";
 import PiniaListAsynCode from "../pinia/pinia-list-asyn.vue?raw";
-import PiniaListAsynBorder from "../pinia/pinia-list-asyn-border.vue";
-import PiniaListAsynBorderCode from "../pinia/pinia-list-asyn-border.vue?raw";
 
 
 </script>
@@ -38,18 +36,6 @@ import PiniaListAsynBorderCode from "../pinia/pinia-list-asyn-border.vue?raw";
                  :code='PiniaListAsynCode'
       >
         <pinia-list-asyn/>
-        <template #description>
-        </template>
-
-      </tip-block>
-    </n-grid-item>
-    <n-grid-item>
-
-      <tip-block :tip_name="'pinia 异步请求'"
-                 :file_name="'pinia-list-asyn-border'"
-                 :code='PiniaListAsynBorderCode'
-      >
-        <pinia-list-asyn-border/>
         <template #description>
         </template>
 

@@ -2,6 +2,11 @@ import { createRouter, createWebHashHistory} from "vue-router";
 
 const routes = [
     {
+        path: '/',
+        name:'helloworld',
+        component: ()=> import('../components/HelloWorld.vue')
+    },
+    {
         path: '/html',
         name:'html',
         component: ()=> import('../components/views/html-page.vue')
@@ -66,7 +71,7 @@ const routes = [
                         component: ()=> import('../components/routers/list.vue')
                     },
                     {
-                        path: 'guard', // 变量
+                        path: 'guard',
                         name:'guard',
                         component: ()=> import('../components/routers/guard.vue'),
                         beforeEnter:(to, from, next)=>{
@@ -76,17 +81,6 @@ const routes = [
                                 alert('请签到')
                                 // next() // 提示后允许进入，添加next()，不允许则不需要添加
                             }
-
-                            // if(!sessionStorage.getItem('sign')){
-                            //     if(to.path != '/vue/router/home'){
-                            //         alert('请签到！')
-                            //     }else {
-                            //         next()
-                            //     }
-                            // }else {
-                            //     next()
-                            // }
-
                         }
                     },
                     {
@@ -108,6 +102,11 @@ const routes = [
                     }
 
                 ]
+            },
+            {
+                path: 'pinia',
+                name:'pinia',
+                component: ()=> import('../components/views/vue-pinia-page.vue')
             },
         ]
     },

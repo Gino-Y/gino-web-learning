@@ -21,7 +21,7 @@ import { ref } from "vue";
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 
-import ThemeSwitch from "./components/theme_switch.vue";
+import ThemeSwitch from "./components/elements/theme_switch.vue";
 import MenuPage from "./components/views/menu-page.vue";
 
 
@@ -112,4 +112,7 @@ const flag = ref(false)
   align-items: center;
   justify-content: center;
 }
+/**{*/
+/*  white-space: nowrap;*/
+/*}*/
 </style>
